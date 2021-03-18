@@ -1,0 +1,11 @@
+
+
+#include "stm32f1xx.h"
+#include <stdint.h>
+
+
+int main(void)
+{
+    /* Loop forever */
+	for(;;);
+}

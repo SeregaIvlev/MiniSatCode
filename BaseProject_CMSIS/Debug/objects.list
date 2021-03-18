@@ -1,0 +1,4 @@
+"Drivers/startup_stm32f102c4tx.o"
+"Drivers/syscalls.o"
+"Drivers/sysmem.o"
+"User/main.o"
