@@ -54,8 +54,8 @@ all: main-build
 main-build: HAL_Blink_Example.elf secondary-outputs
 
 # Tool invocations
-HAL_Blink_Example.elf: $(OBJS) $(USER_OBJS) C:\Users\Sergei\Desktop\minisat\Code\HAL_Blink_Example\STM32F102C4TX_FLASH.ld
-	arm-none-eabi-gcc -o "HAL_Blink_Example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\HAL_Blink_Example\STM32F102C4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_Blink_Example.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+HAL_Blink_Example.elf: $(OBJS) $(USER_OBJS) C:\Users\Sergei\Desktop\minisat\Code\HAL_Blink_Example\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "HAL_Blink_Example.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\HAL_Blink_Example\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="HAL_Blink_Example.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

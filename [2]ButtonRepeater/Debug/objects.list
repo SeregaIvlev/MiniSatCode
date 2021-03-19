@@ -1,0 +1,4 @@
+"Core/main.o"
+"System/startup_stm32f103c8tx.o"
+"System/syscalls.o"
+"System/sysmem.o"

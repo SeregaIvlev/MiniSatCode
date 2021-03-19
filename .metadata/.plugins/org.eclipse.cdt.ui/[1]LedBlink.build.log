@@ -1,0 +1,20 @@
+21:46:31 **** Incremental Build of configuration Debug for project [1]LedBlink ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[1]LedBlink/System/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[1]LedBlink.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[1]LedBlink\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[1]LedBlink.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [1]LedBlink.elf
+ 
+arm-none-eabi-objdump -h -S  [1]LedBlink.elf  > "[1]LedBlink.list"
+arm-none-eabi-objcopy  -O binary  [1]LedBlink.elf  "[1]LedBlink.bin"
+arm-none-eabi-size   [1]LedBlink.elf 
+   text	   data	    bss	    dec	    hex	filename
+    636	      8	   1568	   2212	    8a4	[1]LedBlink.elf
+Finished building: default.size.stdout
+Finished building: [1]LedBlink.list
+Finished building: [1]LedBlink.bin
+ 
+ 
+ 
+
+21:46:33 Build Finished. 0 errors, 0 warnings. (took 1s.548ms)
+

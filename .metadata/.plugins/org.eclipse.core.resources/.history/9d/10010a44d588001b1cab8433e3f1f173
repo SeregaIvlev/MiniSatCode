@@ -1,0 +1,9 @@
+
+#include <stdint.h>
+#include "stm32f1"
+
+int main(void)
+{
+    /* Loop forever */
+	for(;;);
+}

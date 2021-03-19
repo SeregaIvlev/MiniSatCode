@@ -1,0 +1,13 @@
+15:04:32 **** Incremental Build of configuration Debug for project [2]_Blink ****
+make -j8 all 
+arm-none-eabi-gcc -o "[2]_Blink.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\STM32F102C4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[2]_Blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [2]_Blink.elf
+ 
+arm-none-eabi-size   [2]_Blink.elf 
+   text	   data	    bss	    dec	    hex	filename
+    644	      8	   1568	   2220	    8ac	[2]_Blink.elf
+Finished building: default.size.stdout
+ 
+
+15:04:33 Build Finished. 0 errors, 0 warnings. (took 919ms)
+

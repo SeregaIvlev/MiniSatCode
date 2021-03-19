@@ -1,0 +1,20 @@
+14:58:15 **** Incremental Build of configuration Debug for project [3]_RCC_Config ****
+make -j8 all 
+arm-none-eabi-gcc "../User/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F102C4Tx -DSTM32F1 -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]_RCC_Config/Drivers/CMSIS/Include" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]_RCC_Config" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"User/main.d" -MT"User/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "User/main.o"
+arm-none-eabi-gcc -o "[3]_RCC_Config.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[3]_RCC_Config\STM32F102C4TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[3]_RCC_Config.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [3]_RCC_Config.elf
+ 
+arm-none-eabi-objdump -h -S  [3]_RCC_Config.elf  > "[3]_RCC_Config.list"
+arm-none-eabi-objcopy  -O binary  [3]_RCC_Config.elf  "[3]_RCC_Config.bin"
+arm-none-eabi-size   [3]_RCC_Config.elf 
+   text	   data	    bss	    dec	    hex	filename
+    724	      8	   1568	   2300	    8fc	[3]_RCC_Config.elf
+Finished building: default.size.stdout
+Finished building: [3]_RCC_Config.list
+Finished building: [3]_RCC_Config.bin
+ 
+ 
+ 
+
+14:58:17 Build Finished. 0 errors, 0 warnings. (took 1s.690ms)
+

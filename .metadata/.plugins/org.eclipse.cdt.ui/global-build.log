@@ -1,7 +1,25 @@
-22:07:08 **** Incremental Build of configuration Debug for project BaseProject_CMSIS ****
+22:44:01 **** Clean-only build of configuration Debug for project [3]CodeFormat ****
+make -j8 clean 
+rm -rf *
+ 
+22:44:01 **** Incremental Build of configuration Debug for project [3]CodeFormat ****
 make -j8 all 
-arm-none-eabi-size   BaseProject_CMSIS.elf 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"System/startup_stm32f103c8tx.d" -MT"System/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/startup_stm32f103c8tx.o" "../System/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../System/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"System/syscalls.d" -MT"System/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/syscalls.o"
+arm-none-eabi-gcc "../System/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"System/sysmem.d" -MT"System/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/sysmem.o"
+arm-none-eabi-gcc "../Core/GPIO/GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/GPIO/GPIO.d" -MT"Core/GPIO/GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/GPIO/GPIO.o"
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[3]CodeFormat.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[3]CodeFormat\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[3]CodeFormat.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [3]CodeFormat.elf
+ 
+arm-none-eabi-size   [3]CodeFormat.elf 
+arm-none-eabi-objdump -h -S  [3]CodeFormat.elf  > "[3]CodeFormat.list"
+arm-none-eabi-objcopy  -O binary  [3]CodeFormat.elf  "[3]CodeFormat.bin"
    text	   data	    bss	    dec	    hex	filename
-    660	      8	   1568	   2236	    8bc	BaseProject_CMSIS.elf
+    812	      8	   1568	   2388	    954	[3]CodeFormat.elf
 Finished building: default.size.stdout
+ 
+Finished building: [3]CodeFormat.list
+ 
+Finished building: [3]CodeFormat.bin
  

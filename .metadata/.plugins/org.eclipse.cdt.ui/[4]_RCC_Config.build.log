@@ -1,0 +1,8 @@
+15:06:46 **** Incremental Build of configuration Debug for project [4]_RCC_Config ****
+make -j8 all 
+Error: Cannot find the specified linker script. Check the linker settings in the build configuration.
+make: *** [makefile:85: fail-specified-linker-script-missing] Error 2
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+15:06:46 Build Failed. 2 errors, 0 warnings. (took 294ms)
+

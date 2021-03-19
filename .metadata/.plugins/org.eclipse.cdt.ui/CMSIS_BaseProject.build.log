@@ -1,0 +1,10 @@
+21:14:34 **** Incremental Build of configuration Debug for project CMSIS_BaseProject ****
+make -j8 all 
+arm-none-eabi-size   CMSIS_BaseProject.elf 
+   text	   data	    bss	    dec	    hex	filename
+    660	      8	   1568	   2236	    8bc	CMSIS_BaseProject.elf
+Finished building: default.size.stdout
+ 
+
+21:14:34 Build Finished. 0 errors, 0 warnings. (took 381ms)
+

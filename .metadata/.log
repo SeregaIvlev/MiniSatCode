@@ -191,3 +191,314 @@ java.lang.Exception: Resource '/BaseProject_CMSIS/Drivers/CMSIS/STM32F1xx/Includ
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-03-18 22:00:17.992
 !MESSAGE Indexed 'BaseProject_CMSIS' (3 sources, 61 headers) in 0.681 sec: 2,635 declarations; 4,210 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.029%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-18 23:30:27.593
+!MESSAGE Indexed '[1]_LED_On' (3 sources, 79 headers) in 2.08 sec: 5,484 declarations; 11,213 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-18 23:51:35.227
+!MESSAGE Indexed '[2]_Blink' (3 sources, 79 headers) in 1.78 sec: 5,484 declarations; 11,213 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-18 23:54:28.252
+!MESSAGE Indexed '[3]_RCC_Config' (3 sources, 79 headers) in 1.53 sec: 5,484 declarations; 11,213 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 15:01:00.935
+!MESSAGE Indexed '[4]_RCC_Config' (3 sources, 78 headers) in 1.91 sec: 5,484 declarations; 11,212 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.1%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 15:08:37.056
+!MESSAGE Indexed 'HAL_Blink_Example' (19 sources, 77 headers) in 7.26 sec: 3,614 declarations; 13,093 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2021-03-19 20:52:45.819 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-19 20:53:17.586
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-19 20:53:17.766
+!MESSAGE Log4j initialized with config file C:\Users\Sergei\Desktop\minisat\Code\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-19 20:53:40.489
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-19 20:53:41.892
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-03-19 20:56:28.868
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY org.eclipse.core.resources 2 2 2021-03-19 20:59:54.561
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-03-19 20:59:54.561
+!MESSAGE The project description file (.project) for '[1]_LED_On' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-03-19 20:59:54.561
+!MESSAGE The project description file (.project) for '[2]_Blink' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:00:01.287
+!MESSAGE Indexed 'CMSIS_BaseProject' (2 sources, 52 headers) in 2.56 sec: 1,918 declarations; 2,730 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.043%)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-03-19 21:09:51.581
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\Debug\BaseProject_CMSIS.map (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:401)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-03-19 21:09:51.713
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\Debug\BaseProject_CMSIS.map (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:409)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$3(ElfAnalyzerView.java:403)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-03-19 21:09:52.114
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\Debug\BaseProject_CMSIS.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$14(StackAnalyzerView.java:1185)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-03-19 21:10:04.060
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\Debug\BaseProject_CMSIS.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1230)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-03-19 21:10:11.479
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sergei\Desktop\minisat\Code\[1]_LED_On\Debug\BaseProject_CMSIS.map (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:401)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$5(ElfAnalyzerView.java:450)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadAsync(ThreadHelper.java:25)
+	at elf_analyzer.ElfAnalyzerView.selectionChanged(ElfAnalyzerView.java:450)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:278)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handlePostSelectionChanged(SelectionService.java:120)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$3(SelectionService.java:81)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$4.run(SelectionAggregator.java:184)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyTargetedPostListeners(SelectionAggregator.java:181)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyPostListeners(SelectionAggregator.java:172)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$7(SelectionAggregator.java:158)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$6.lambda$0(SelectionAggregator.java:250)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$6.changed(SelectionAggregator.java:250)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:379)
+	at org.eclipse.e4.ui.internal.workbench.SelectionServiceImpl.setPostSelection(SelectionServiceImpl.java:39)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.lambda$2(CompatibilityPart.java:128)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:823)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:820)
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1193)
+	at org.eclipse.ui.navigator.CommonViewer.handlePostSelect(CommonViewer.java:460)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$0(StructuredViewer.java:1216)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:263)
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.lambda$1(OpenStrategy.java:428)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4005)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-03-19 21:10:11.599
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Sergei\Desktop\minisat\Code\[1]_LED_On\Debug\BaseProject_CMSIS.map (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:57)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:358)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:409)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$5(ElfAnalyzerView.java:450)
+	at com.st.stm32cube.ide.common.utils.ThreadHelper.runInUiThreadAsync(ThreadHelper.java:25)
+	at elf_analyzer.ElfAnalyzerView.selectionChanged(ElfAnalyzerView.java:450)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.notifyListeners(SelectionService.java:278)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.handlePostSelectionChanged(SelectionService.java:120)
+	at org.eclipse.ui.internal.e4.compatibility.SelectionService.lambda$3(SelectionService.java:81)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$4.run(SelectionAggregator.java:184)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyTargetedPostListeners(SelectionAggregator.java:181)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.notifyPostListeners(SelectionAggregator.java:172)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator.access$7(SelectionAggregator.java:158)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$6.lambda$0(SelectionAggregator.java:250)
+	at org.eclipse.e4.core.contexts.RunAndTrack.runExternalCode(RunAndTrack.java:59)
+	at org.eclipse.e4.ui.internal.workbench.SelectionAggregator$6.changed(SelectionAggregator.java:250)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:108)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:364)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:379)
+	at org.eclipse.e4.ui.internal.workbench.SelectionServiceImpl.setPostSelection(SelectionServiceImpl.java:39)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.lambda$2(CompatibilityPart.java:128)
+	at org.eclipse.jface.viewers.StructuredViewer$3.run(StructuredViewer.java:823)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+	at org.eclipse.jface.viewers.StructuredViewer.firePostSelectionChanged(StructuredViewer.java:820)
+	at org.eclipse.jface.viewers.StructuredViewer.handlePostSelect(StructuredViewer.java:1193)
+	at org.eclipse.ui.navigator.CommonViewer.handlePostSelect(CommonViewer.java:460)
+	at org.eclipse.jface.viewers.StructuredViewer.lambda$0(StructuredViewer.java:1216)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.jface.util.OpenStrategy.firePostSelectionEvent(OpenStrategy.java:263)
+	at org.eclipse.jface.util.OpenStrategy.access$5(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.lambda$1(OpenStrategy.java:428)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4005)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3633)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1158)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1047)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-03-19 21:10:12.656
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\Sergei\Desktop\minisat\Code\[1]_LED_On\Debug\BaseProject_CMSIS.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1230)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-03-19 21:10:27.773
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: C:\Users\Sergei\Desktop\minisat\Code\[2]_Blink\Debug\BaseProject_CMSIS.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:58)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:86)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:900)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1230)
+	at java.lang.Thread.run(Thread.java:748)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:16:00.595
+!MESSAGE Indexed '[0]LedOn' (3 sources, 78 headers) in 2.29 sec: 5,210 declarations; 10,841 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:41:54.328
+!MESSAGE Indexed '[0]LedBlink' (3 sources, 78 headers) in 1.47 sec: 5,209 declarations; 10,820 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:41:59.169
+!MESSAGE Indexed 'BaseProject_CMSIS' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:42:22.860
+!MESSAGE Indexed '[1]LedBlink' (3 sources, 78 headers) in 1.15 sec: 5,209 declarations; 10,820 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (1.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 21:48:17.902
+!MESSAGE Indexed '[2]ButtonRepeater' (3 sources, 77 headers) in 1.98 sec: 5,211 declarations; 10,107 references; 6 unresolved inclusions; 253 syntax errors; 670 unresolved names (4.2%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-03-19 21:49:11.872
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-03-19 21:49:18.380
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-03-19 21:49:35.183
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2021-03-19 21:50:03.647
+!MESSAGE Won't launch debug session since we failed to locate the binary.
+!SESSION 2021-03-19 21:50:11.907 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-19 21:50:24.494
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-19 21:50:24.603
+!MESSAGE Log4j initialized with config file C:\Users\Sergei\Desktop\minisat\Code\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-19 21:50:41.138
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-19 21:50:42.905
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 22:25:57.129
+!MESSAGE Indexed '[3]CodeFormat' (3 sources, 77 headers) in 3,8 sec: 5 212 declarations; 10 136 references; 6 unresolved inclusions; 253 syntax errors; 669 unresolved names (4,2 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 22:46:31.075
+!MESSAGE Indexed '[4]RCC' (4 sources, 78 headers) in 2,12 sec: 5 221 declarations; 10 219 references; 6 unresolved inclusions; 253 syntax errors; 670 unresolved names (4,2 %)

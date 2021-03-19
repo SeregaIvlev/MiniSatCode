@@ -1,0 +1,20 @@
+21:45:41 **** Incremental Build of configuration Debug for project [0]LedOn ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[0]LedOn/System/CMSIS" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[0]LedOn.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[0]LedOn\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[0]LedOn.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [0]LedOn.elf
+ 
+arm-none-eabi-objdump -h -S  [0]LedOn.elf  > "[0]LedOn.list"
+arm-none-eabi-objcopy  -O binary  [0]LedOn.elf  "[0]LedOn.bin"
+arm-none-eabi-size   [0]LedOn.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	[0]LedOn.elf
+Finished building: default.size.stdout
+Finished building: [0]LedOn.list
+Finished building: [0]LedOn.bin
+ 
+ 
+ 
+
+21:45:43 Build Finished. 0 errors, 0 warnings. (took 1s.614ms)
+

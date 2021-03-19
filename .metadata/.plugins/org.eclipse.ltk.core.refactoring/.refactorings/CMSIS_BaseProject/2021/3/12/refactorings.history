@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;CMSIS_BaseProject Debug.launch, STM32F103C8TX_FLASH.ld&apos; to &apos;CMSIS_BaseProject&apos;" description="Move 2 resources to &apos;CMSIS_BaseProject&apos;" destination="/CMSIS_BaseProject" element1="System/CMSIS_BaseProject Debug.launch" element2="System/STM32F103C8TX_FLASH.ld" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1616174071851" updateReferences="true"/>
+</session>
