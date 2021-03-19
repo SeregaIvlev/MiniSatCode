@@ -502,3 +502,75 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-03-19 22:46:31.075
 !MESSAGE Indexed '[4]RCC' (4 sources, 78 headers) in 2,12 sec: 5 221 declarations; 10 219 references; 6 unresolved inclusions; 253 syntax errors; 670 unresolved names (4,2 %)
+!SESSION 2021-03-19 23:24:14.096 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_202
+java.vendor=AdoptOpenJdk
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ru_RU
+Framework arguments:  C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-19 23:24:47.687
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-19 23:24:47.823
+!MESSAGE Log4j initialized with config file C:\Users\Sergei\Desktop\minisat\Code\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-19 23:25:06.814
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-19 23:25:09.476
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-19 23:25:12.891
+!MESSAGE Indexed '[4]RCC' (4 sources, 79 headers) in 3,69 sec: 5 221 declarations; 10 943 references; 2 unresolved inclusions; 36 syntax errors; 189 unresolved names (1,2 %)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.494
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@178fe4af): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.494
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.516
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@4afb74de): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.517
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.530
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@6874e6ff): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.530
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.544
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@b6ddc2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.544
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.560
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@249bf400): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.560
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.575
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@35d739c9): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.575
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.588
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@7a5b7292): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.589
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.601
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@4cb5e8d6): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.602
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.615
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@37f53eb4): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.615
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-20 01:14:30.628
+!MESSAGE Request for monitor: 'RequestMonitor (com.st.stm32cube.ide.mcu.sfrview.ui.SfrView$4@3be040f2): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2021-03-20 01:14:30.628
+!MESSAGE Connection is shut down

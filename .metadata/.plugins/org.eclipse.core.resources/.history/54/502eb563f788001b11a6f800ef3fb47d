@@ -1,0 +1,38 @@
+
+#include "main.h"
+
+
+void RCC_Init()
+{
+	RCC->CR |= (RCC_CR_HSEON);
+	while( !(RCC->CR & RCC_CR_HSERDY) );
+
+	FLASH->ACR &= ~(FLASH_ACR_PRFTBE);
+	FLASH->ACR |= (FLASH_ACR_PRFTBE);
+
+	FLASH->ACR &= ~(FLASH_ACR_LATENCY_0 | FLASH_ACR_LATENCY_2);
+	FLASH->ACR |= FLASH_ACR_LATENCY_1;
+
+
+	RCC->CFGR &= ~(RCC_CFGR_PLLMULL_0 | RCC_CFGR_PLLMULL_1 | RCC_CFGR_PLLMULL_2 | RCC_CFGR_PLLMULL_3 );
+	RCC->CFGR |= RCC_CFGR_PLLMULL6;
+
+
+}
+
+int main(void)
+{
+	RCC_Init();
+	LED_Init();
+	ButtonInit();
+
+    /* Loop forever */
+	while(1){
+
+		if(ButtonRead())
+			GPIOC->ODR = 0;
+		else
+			GPIOC->ODR = (1<<13);
+
+	}
+}

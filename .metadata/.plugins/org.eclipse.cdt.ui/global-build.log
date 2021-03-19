@@ -1,25 +1,68 @@
-22:44:01 **** Clean-only build of configuration Debug for project [3]CodeFormat ****
-make -j8 clean 
-rm -rf *
- 
-22:44:01 **** Incremental Build of configuration Debug for project [3]CodeFormat ****
+01:10:53 **** Incremental Build of configuration Debug for project [4]RCC ****
 make -j8 all 
-arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"System/startup_stm32f103c8tx.d" -MT"System/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/startup_stm32f103c8tx.o" "../System/startup_stm32f103c8tx.s"
-arm-none-eabi-gcc "../System/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"System/syscalls.d" -MT"System/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/syscalls.o"
-arm-none-eabi-gcc "../System/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"System/sysmem.d" -MT"System/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "System/sysmem.o"
-arm-none-eabi-gcc "../Core/GPIO/GPIO.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/GPIO/GPIO.d" -MT"Core/GPIO/GPIO.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/GPIO/GPIO.o"
-arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[3]CodeFormat/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
-arm-none-eabi-gcc -o "[3]CodeFormat.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[3]CodeFormat\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[3]CodeFormat.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: [3]CodeFormat.elf
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[4]RCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[4]RCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [4]RCC.elf
  
-arm-none-eabi-size   [3]CodeFormat.elf 
-arm-none-eabi-objdump -h -S  [3]CodeFormat.elf  > "[3]CodeFormat.list"
-arm-none-eabi-objcopy  -O binary  [3]CodeFormat.elf  "[3]CodeFormat.bin"
+arm-none-eabi-objdump -h -S  [4]RCC.elf  > "[4]RCC.list"
+arm-none-eabi-objcopy  -O binary  [4]RCC.elf  "[4]RCC.bin"
+arm-none-eabi-size   [4]RCC.elf 
    text	   data	    bss	    dec	    hex	filename
-    812	      8	   1568	   2388	    954	[3]CodeFormat.elf
+   1084	      8	   1568	   2660	    a64	[4]RCC.elf
+Finished building: default.size.stdout
+Finished building: [4]RCC.list
+Finished building: [4]RCC.bin
+ 
+ 
+ 
+01:11:07 **** Incremental Build of configuration Debug for project [4]RCC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[4]RCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[4]RCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [4]RCC.elf
+ 
+arm-none-eabi-objdump -h -S  [4]RCC.elf  > "[4]RCC.list"
+arm-none-eabi-objcopy  -O binary  [4]RCC.elf  "[4]RCC.bin"
+arm-none-eabi-size   [4]RCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1084	      8	   1568	   2660	    a64	[4]RCC.elf
+Finished building: default.size.stdout
+Finished building: [4]RCC.bin
+ 
+Finished building: [4]RCC.list
+ 
+ 
+01:12:53 **** Incremental Build of configuration Debug for project [4]RCC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[4]RCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[4]RCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [4]RCC.elf
+ 
+arm-none-eabi-objdump -h -S  [4]RCC.elf  > "[4]RCC.list"
+arm-none-eabi-objcopy  -O binary  [4]RCC.elf  "[4]RCC.bin"
+arm-none-eabi-size   [4]RCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      8	   1568	   2636	    a4c	[4]RCC.elf
+Finished building: default.size.stdout
+Finished building: [4]RCC.list
+Finished building: [4]RCC.bin
+ 
+ 
+ 
+01:14:32 **** Incremental Build of configuration Debug for project [4]RCC ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/System/CMSIS" -I"C:/Users/Sergei/Desktop/minisat/Code/[4]RCC/Core/GPIO" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/main.d" -MT"Core/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/main.o"
+arm-none-eabi-gcc -o "[4]RCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\Sergei\Desktop\minisat\Code\[4]RCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="[4]RCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: [4]RCC.elf
+ 
+arm-none-eabi-objdump -h -S  [4]RCC.elf  > "[4]RCC.list"
+arm-none-eabi-objcopy  -O binary  [4]RCC.elf  "[4]RCC.bin"
+arm-none-eabi-size   [4]RCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      8	   1568	   2636	    a4c	[4]RCC.elf
+Finished building: [4]RCC.list
+Finished building: [4]RCC.bin
 Finished building: default.size.stdout
  
-Finished building: [3]CodeFormat.list
  
-Finished building: [3]CodeFormat.bin
  

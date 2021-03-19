@@ -1,0 +1,30 @@
+
+#include "main.h"
+
+
+void RCC_Init()
+{
+	RCC->CR |= (RCC_CR_HSEON);
+	while(RCC->CR & RCC_CR_HSERDY);
+
+
+
+
+}
+
+int main(void)
+{
+	RCC_Init();
+	LED_Init();
+	ButtonInit();
+
+    /* Loop forever */
+	while(1){
+
+		if(ButtonRead())
+			GPIOC->ODR = 0;
+		else
+			GPIOC->ODR = (1<<13);
+
+	}
+}

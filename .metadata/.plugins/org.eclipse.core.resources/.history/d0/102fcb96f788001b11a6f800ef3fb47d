@@ -34,7 +34,7 @@ void RCC_Init()
 
 	RCC->CFGR &= ~(RCC_CFGR_SW_1 | RCC_CFGR_SW_0);
 	RCC->CFGR |= RCC_CFGR_SW_1;
-	while(  (RCC->CFGR & (RCC_CFGR_SWS_1 | RCC_CFGR_SWS_0))    !=  RCC_CFGR_SWS_1);
+	while(RCC->CFGR & (RCC_CFGR_SWS_1 | RCC_CFGR_SWS_0) !=  RCC_CFGR_SWS_1);
 }
 
 int main(void)
@@ -46,9 +46,10 @@ int main(void)
     /* Loop forever */
 	while(1){
 
-
-		GPIOC->ODR ^= (1<<13); 	//Toggle ODR pin
-		for(uint32_t cnt = 0; cnt < 1000000; cnt++); //Simply delay
+		if(ButtonRead())
+			GPIOC->ODR = 0;
+		else
+			GPIOC->ODR = (1<<13);
 
 	}
 }
